@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://pronto-help-center-327a6109e2e3.herokuapp.com/index.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://pronto-help-center-327a6109e2e3.herokuapp.com/ordering.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pronto-help-center-327a6109e2e3.herokuapp.com/delivery.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pronto-help-center-327a6109e2e3.herokuapp.com/merchants.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pronto-help-center-327a6109e2e3.herokuapp.com/account.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>

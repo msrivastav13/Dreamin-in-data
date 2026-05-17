@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>JlieF+ISMGvpxGy9roNvfnChPM6YAo4maiOG6xwQYeo=_2</activeVersionIdentifier>
+    <developerName>Pronto_FAQs</developerName>
+    <masterLabel>Pronto FAQs</masterLabel>
+    <overridable>false</overridable>
+    <templateVersions>
+        <content>Answer question from the user using the below provided context
+
+Question - {!$Input:Question}
+
+Provided Context - {!$EinsteinSearch:Pronto_Help_Center_FAQs_Retriever_1Cx_MDl05eb9d0b.results} 
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT5Mini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Pronto_Help_Center_FAQs_Retriever_1Cx_MDl05eb9d0b</definition>
+            <label>Pronto Help Center FAQs Retriever</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Question}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://Integer</definition>
+                <isRequired>false</isRequired>
+                <parameterName>resultCount</parameterName>
+                <valueExpression>5</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Pronto_Help_Center_FAQs_Retriever_1Cx_MDl05eb9d0b</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JlieF+ISMGvpxGy9roNvfnChPM6YAo4maiOG6xwQYeo=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Answer question from the user using the below provided context
+
+Question - {!$Input:Question}
+
+Provided Context - {!$EinsteinSearch:Pronto_Help_Center_FAQs_Retriever_1Cx_MDl05eb9d0b.results} 
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>true</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT5Mini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Pronto_Help_Center_FAQs_Retriever_1Cx_MDl05eb9d0b</definition>
+            <label>Pronto Help Center FAQs Retriever</label>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Question}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://List&lt;String&gt;</definition>
+                <isRequired>false</isRequired>
+                <parameterName>outputFieldNames</parameterName>
+                <valueExpression>[&quot;Chunk&quot;]</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://Integer</definition>
+                <isRequired>false</isRequired>
+                <parameterName>resultCount</parameterName>
+                <valueExpression>5</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Pronto_Help_Center_FAQs_Retriever_1Cx_MDl05eb9d0b</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>JlieF+ISMGvpxGy9roNvfnChPM6YAo4maiOG6xwQYeo=_2</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

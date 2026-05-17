@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "description": "Extract all fields from this Pronto food delivery merchant partnership application form.",
+  "properties": {
+    "restaurantName": {
+      "type": "string",
+      "description": "Name of the restaurant"
+    },
+    "legalBusinessName": {
+      "type": "string",
+      "description": "Legal business entity name"
+    },
+    "businessAddress": {
+      "type": "string",
+      "description": "Full business address"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "description": "Business phone number"
+    },
+    "email": {
+      "type": "string",
+      "description": "Business email address"
+    },
+    "website": {
+      "type": "string",
+      "description": "Business website URL"
+    },
+    "taxIdEIN": {
+      "type": "string",
+      "description": "Tax ID or EIN number"
+    },
+    "businessLicenseNumber": {
+      "type": "string",
+      "description": "Business license number"
+    },
+    "ownerName": {
+      "type": "string",
+      "description": "Name of the restaurant owner"
+    },
+    "ownerPhone": {
+      "type": "string",
+      "description": "Owner phone number"
+    },
+    "ownerEmail": {
+      "type": "string",
+      "description": "Owner email address"
+    },
+    "cuisineType": {
+      "type": "string",
+      "description": "Type of cuisine served"
+    },
+    "averagePrepTime": {
+      "type": "string",
+      "description": "Average food preparation time"
+    },
+    "operatingHours": {
+      "type": "string",
+      "description": "Business operating hours"
+    },
+    "seatingCapacity": {
+      "type": "number",
+      "description": "Number of seats in the restaurant"
+    },
+    "numberOfLocations": {
+      "type": "number",
+      "description": "Number of restaurant locations"
+    },
+    "yearsInBusiness": {
+      "type": "number",
+      "description": "How many years the business has operated"
+    },
+    "preferredTier": {
+      "type": "string",
+      "description": "Partnership tier chosen: Basic, Plus, or Premium"
+    },
+    "estimatedWeeklyOrders": {
+      "type": "string",
+      "description": "Estimated number of weekly orders"
+    },
+    "deliveryRadiusPreference": {
+      "type": "string",
+      "description": "Preferred delivery radius in miles"
+    },
+    "offersCatering": {
+      "type": "boolean",
+      "description": "Whether the restaurant offers catering"
+    },
+    "healthInspectionScore": {
+      "type": "number",
+      "description": "Latest health inspection score out of 100"
+    },
+    "lastInspectionDate": {
+      "type": "string",
+      "description": "Date of last health inspection"
+    },
+    "foodHandlerCertifications": {
+      "type": "string",
+      "description": "Number of certified food handler staff"
+    },
+    "allergenMenuAvailable": {
+      "type": "boolean",
+      "description": "Whether an allergen menu is available"
+    },
+    "bankName": {
+      "type": "string",
+      "description": "Bank name for payouts"
+    },
+    "signatureDate": {
+      "type": "string",
+      "description": "Date the application was signed"
+    }
+  }
+}

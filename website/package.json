@@ -1,0 +1,15 @@
+{
+  "name": "pronto-help-center",
+  "version": "1.0.0",
+  "description": "Pronto Food Delivery Help Center",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

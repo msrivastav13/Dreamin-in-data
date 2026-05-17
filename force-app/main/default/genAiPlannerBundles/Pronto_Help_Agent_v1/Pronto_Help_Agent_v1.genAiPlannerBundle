@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Customer-facing service agent that answers FAQ questions about Pronto food delivery platform, grounded with Data 360 intelligent context.</description>
+    <localTopicLinks>
+        <genAiPluginName>ambiguous_question_16jg7000000KqKD</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>customer_faqs_16jg7000000KqKD</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>escalation_16jg7000000KqKD</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>off_topic_16jg7000000KqKD</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>topic_selector_16jg7000000KqKD</genAiPluginName>
+    </localTopicLinks>
+    <localTopics>
+        <fullName>ambiguous_question_16jg7000000KqKD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Ask for clarification when a customer request is too vague</description>
+        <developerName>ambiguous_question_16jg7000000KqKD</developerName>
+        <genAiPluginInstructions>
+            <description>You are a friendly and helpful customer support agent for Pronto, a food delivery platform. You answer questions about ordering, delivery, payments, refunds, Pronto+ membership, promotions, account management, and merchant information. Always provide accurate, concise answers grounded in the Pronto Help Center knowledge base.</description>
+            <developerName>instruction0_179g7000000XL2T</developerName>
+            <language>en_US</language>
+            <masterLabel>instruction0_179g7000000XL2T</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>ambiguous_question</localDeveloperName>
+        <masterLabel>Ambiguous Question</masterLabel>
+        <pluginType>Topic</pluginType>
+    </localTopics>
+    <localTopics>
+        <fullName>off_topic_16jg7000000KqKD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Redirect conversation when user request is unrelated to Pronto</description>
+        <developerName>off_topic_16jg7000000KqKD</developerName>
+        <genAiPluginInstructions>
+            <description>You are a friendly and helpful customer support agent for Pronto, a food delivery platform. You answer questions about ordering, delivery, payments, refunds, Pronto+ membership, promotions, account management, and merchant information. Always provide accurate, concise answers grounded in the Pronto Help Center knowledge base.</description>
+            <developerName>instruction0_179g7000000XL2V</developerName>
+            <language>en_US</language>
+            <masterLabel>instruction0_179g7000000XL2V</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>off_topic</localDeveloperName>
+        <masterLabel>Off Topic</masterLabel>
+        <pluginType>Topic</pluginType>
+    </localTopics>
+    <localTopics>
+        <fullName>escalation_16jg7000000KqKD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Handles requests from users who want to transfer to a live human agent</description>
+        <developerName>escalation_16jg7000000KqKD</developerName>
+        <genAiPluginInstructions>
+            <description>You are a friendly and helpful customer support agent for Pronto, a food delivery platform. You answer questions about ordering, delivery, payments, refunds, Pronto+ membership, promotions, account management, and merchant information. Always provide accurate, concise answers grounded in the Pronto Help Center knowledge base.</description>
+            <developerName>instruction0_179g7000000XL2U</developerName>
+            <language>en_US</language>
+            <masterLabel>instruction0_179g7000000XL2U</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>escalation</localDeveloperName>
+        <masterLabel>Escalation</masterLabel>
+        <pluginType>Topic</pluginType>
+    </localTopics>
+    <localTopics>
+        <fullName>customer_faqs_16jg7000000KqKD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Answer customer questions about Pronto food delivery including ordering, delivery tracking, payments, refunds, pricing, Pronto+ membership, promotions, account management, and merchant information</description>
+        <developerName>customer_faqs_16jg7000000KqKD</developerName>
+        <genAiPluginInstructions>
+            <description>You are a friendly and helpful customer support agent for Pronto, a food delivery platform. You answer questions about ordering, delivery, payments, refunds, Pronto+ membership, promotions, account management, and merchant information. Always provide accurate, concise answers grounded in the Pronto Help Center knowledge base.</description>
+            <developerName>instruction0_179g7000000XL2X</developerName>
+            <language>en_US</language>
+            <masterLabel>instruction0_179g7000000XL2X</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>answer_faq_179g7000000XL2X</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>answer_faq_179g7000000XL2X</fullName>
+            <description>Retrieves answers from the Pronto Help Center knowledge base grounded with Data 360 intelligent context</description>
+            <developerName>answer_faq_179g7000000XL2X</developerName>
+            <invocationTarget>Pronto_FAQs</invocationTarget>
+            <invocationTargetType>generatePromptResponse</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+            <localDeveloperName>answer_faq</localDeveloperName>
+            <masterLabel>Answer Faq</masterLabel>
+        </localActions>
+        <localDeveloperName>customer_faqs</localDeveloperName>
+        <masterLabel>Customer Faqs</masterLabel>
+        <pluginType>Topic</pluginType>
+    </localTopics>
+    <localTopics>
+        <fullName>topic_selector_16jg7000000KqKD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Route customer to the appropriate topic based on their question</description>
+        <developerName>topic_selector_16jg7000000KqKD</developerName>
+        <genAiPluginInstructions>
+            <description>You are a friendly and helpful customer support agent for Pronto, a food delivery platform. You answer questions about ordering, delivery, payments, refunds, Pronto+ membership, promotions, account management, and merchant information. Always provide accurate, concise answers grounded in the Pronto Help Center knowledge base.</description>
+            <developerName>instruction0_179g7000000XL2W</developerName>
+            <language>en_US</language>
+            <masterLabel>instruction0_179g7000000XL2W</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localDeveloperName>topic_selector</localDeveloperName>
+        <masterLabel>Topic Selector</masterLabel>
+        <pluginType>Topic</pluginType>
+    </localTopics>
+    <masterLabel>Pronto Help Agent</masterLabel>
+    <plannerType>Atlas__ConcurrentMultiAgentOrchestration</plannerType>
+</GenAiPlannerBundle>

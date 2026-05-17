@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "description": "Extract the full menu from this restaurant menu card image including all items, prices, descriptions, and categories.",
+  "properties": {
+    "restaurantName": {
+      "type": "string",
+      "description": "Name of the restaurant"
+    },
+    "address": {
+      "type": "string",
+      "description": "Restaurant address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Restaurant phone number"
+    },
+    "menuItems": {
+      "type": "array",
+      "description": "All menu items across all categories",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "Menu section (e.g., Signature Ramen, Appetizers, Sides & Rice, Drinks)"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the menu item"
+          },
+          "price": {
+            "type": "number",
+            "description": "Price in dollars"
+          },
+          "description": {
+            "type": "string",
+            "description": "Item description including ingredients"
+          },
+          "isVegetarian": {
+            "type": "boolean",
+            "description": "Whether the item is marked as vegetarian (V)"
+          }
+        }
+      }
+    },
+    "totalItemCount": {
+      "type": "number",
+      "description": "Total number of menu items across all categories"
+    },
+    "priceRange": {
+      "type": "string",
+      "description": "Price range from cheapest to most expensive item"
+    },
+    "cuisineType": {
+      "type": "string",
+      "description": "Type of cuisine based on the menu items"
+    }
+  }
+}

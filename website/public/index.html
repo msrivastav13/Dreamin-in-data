@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Pronto Help Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">Pronto<span class="logo-dot">.</span></a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Help</a>
+                <a href="ordering.html" class="nav-link">Ordering</a>
+                <a href="delivery.html" class="nav-link">Delivery</a>
+                <a href="merchants.html" class="nav-link">Merchants</a>
+                <a href="account.html" class="nav-link">Account</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>How can we help?</h1>
+            <p class="hero-subtitle">Find answers to common questions about ordering, delivery, payments, and more.</p>
+            <div class="search-box">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" placeholder="Search for help..." id="search-input">
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="categories">
+            <a href="ordering.html" class="category-card">
+                <div class="category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                </div>
+                <h3>Ordering</h3>
+                <p>Placing orders, menus, pricing, promotions, and order issues</p>
+            </a>
+            <a href="delivery.html" class="category-card">
+                <div class="category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                </div>
+                <h3>Delivery</h3>
+                <p>Tracking, delivery times, driver issues, and delivery instructions</p>
+            </a>
+            <a href="merchants.html" class="category-card">
+                <div class="category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </div>
+                <h3>Merchants</h3>
+                <p>Restaurant partnerships, onboarding, menu management, and payouts</p>
+            </a>
+            <a href="account.html" class="category-card">
+                <div class="category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </div>
+                <h3>Account & Payments</h3>
+                <p>Login, profile settings, payment methods, refunds, and billing</p>
+            </a>
+        </section>
+
+        <section class="popular-topics">
+            <h2>Popular Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>How do I track my order?</summary>
+                    <div class="faq-answer">
+                        <p>Once your order is confirmed, you can track it in real-time from the Pronto app or website. Go to <strong>My Orders</strong> and tap on the active order to see a live map with your driver's location, estimated arrival time, and order status updates.</p>
+                        <p>You'll also receive push notifications at key stages: when the restaurant confirms your order, when the driver picks it up, and when they're approaching your location.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>What is Pronto's refund policy?</summary>
+                    <div class="faq-answer">
+                        <p>We want every order to be perfect. If something goes wrong, here's how refunds work:</p>
+                        <ul>
+                            <li><strong>Missing items:</strong> Full refund for the missing item(s) plus applicable taxes and fees.</li>
+                            <li><strong>Wrong items:</strong> Full refund or re-delivery of the correct item at no extra charge.</li>
+                            <li><strong>Quality issues:</strong> Partial or full refund depending on the severity, assessed case-by-case.</li>
+                            <li><strong>Late delivery (30+ minutes past estimate):</strong> Service fee refund and a credit toward your next order.</li>
+                            <li><strong>Order never arrived:</strong> Full refund of the entire order amount.</li>
+                        </ul>
+                        <p>Refund requests must be submitted within 48 hours of delivery. Refunds are processed to your original payment method within 3-5 business days.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I change my delivery address after placing an order?</summary>
+                    <div class="faq-answer">
+                        <p>You can update your delivery address if the restaurant hasn't started preparing your order yet. Go to <strong>My Orders</strong>, select the active order, and tap <strong>Edit Address</strong>.</p>
+                        <p>If the restaurant has already started preparing your food, address changes may not be possible as it could affect delivery time and driver routing. In that case, contact our support team through the app and we'll do our best to accommodate the change.</p>
+                        <p>Note: Changing your address to a location significantly farther away may result in an additional delivery fee.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>How does Pronto's pricing work?</summary>
+                    <div class="faq-answer">
+                        <p>Pronto's pricing includes several components:</p>
+                        <ul>
+                            <li><strong>Menu prices:</strong> Set by the restaurant. Some items may differ from in-store pricing.</li>
+                            <li><strong>Delivery fee:</strong> Ranges from $0.99 to $7.99 based on distance, demand, and restaurant partnership tier.</li>
+                            <li><strong>Service fee:</strong> A percentage-based fee (typically 10-15%) that helps cover platform operations.</li>
+                            <li><strong>Small order fee:</strong> A $2.00 fee applies to orders under $15 to cover delivery costs.</li>
+                        </ul>
+                        <p>Pronto+ members enjoy $0 delivery fees on orders over $20, reduced service fees, and no small order fees. Plans start at $9.99/month.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>What is Pronto+ and how do I subscribe?</summary>
+                    <div class="faq-answer">
+                        <p>Pronto+ is our premium membership that saves you money on every order:</p>
+                        <ul>
+                            <li>$0 delivery fee on orders over $20</li>
+                            <li>Reduced service fees (5% instead of 10-15%)</li>
+                            <li>No small order fees</li>
+                            <li>Exclusive member-only promotions and early access to new restaurants</li>
+                            <li>Priority customer support</li>
+                        </ul>
+                        <p>Pronto+ costs $9.99/month or $96/year (save $24). You can subscribe from your account settings. New members get a free 30-day trial. Cancel anytime with no penalties.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I report a problem with my order?</summary>
+                    <div class="faq-answer">
+                        <p>To report an issue with your order:</p>
+                        <ol>
+                            <li>Open the Pronto app and go to <strong>My Orders</strong></li>
+                            <li>Select the order with the issue</li>
+                            <li>Tap <strong>Help</strong> or <strong>Report a Problem</strong></li>
+                            <li>Choose the issue type (missing items, wrong items, quality, etc.)</li>
+                            <li>Add details and photos if applicable</li>
+                            <li>Submit your report</li>
+                        </ol>
+                        <p>Our team reviews reports within 2 hours during business hours. For urgent issues (food safety, allergic reactions), use the emergency contact option for immediate assistance.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="contact-banner">
+            <h2>Still need help?</h2>
+            <p>Our support team is available 24/7 to assist you.</p>
+            <div class="contact-options">
+                <a href="#" class="contact-btn">Chat with us</a>
+                <a href="#" class="contact-btn secondary">Call support</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo">Pronto<span class="logo-dot">.</span></span>
+                <p>Food delivered fast.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>For Merchants</h4>
+                    <a href="#">Partner with Pronto</a>
+                    <a href="#">Merchant portal</a>
+                    <a href="#">Marketing tools</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of service</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Cookie policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pronto. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US';
+            embeddedservice_bootstrap.init(
+                '00Dg7000005oMDl',
+                'Pronto_Help',
+                'https://orgfarm-168a741181-dev-ed.develop.my.site.com/ESWProntoHelp1778901308708',
+                {
+                    scrt2URL: 'https://orgfarm-168a741181-dev-ed.develop.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+    </script>
+    <script type="text/javascript" src="https://orgfarm-168a741181-dev-ed.develop.my.site.com/ESWProntoHelp1778901308708/assets/js/bootstrap.min.js" onload="initEmbeddedMessaging()"></script>
+</body>
+</html>

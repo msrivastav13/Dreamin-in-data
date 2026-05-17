@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "description": "Extract key performance metrics from this Pronto merchant quarterly performance report including KPIs, trends, and recommendations.",
+  "properties": {
+    "merchantName": {
+      "type": "string",
+      "description": "Name of the merchant/restaurant"
+    },
+    "merchantId": {
+      "type": "string",
+      "description": "Pronto merchant ID"
+    },
+    "partnershipTier": {
+      "type": "string",
+      "description": "Current partnership tier (Basic, Plus, or Premium)"
+    },
+    "reportPeriod": {
+      "type": "string",
+      "description": "Time period this report covers"
+    },
+    "reportDate": {
+      "type": "string",
+      "description": "Date the report was generated"
+    },
+    "accountManager": {
+      "type": "string",
+      "description": "Assigned account manager name"
+    },
+    "totalOrders": {
+      "type": "number",
+      "description": "Total number of orders in the period"
+    },
+    "totalRevenue": {
+      "type": "number",
+      "description": "Total revenue in dollars"
+    },
+    "averageOrderValue": {
+      "type": "number",
+      "description": "Average order value in dollars"
+    },
+    "customerRating": {
+      "type": "number",
+      "description": "Average customer rating out of 5"
+    },
+    "averagePrepTime": {
+      "type": "number",
+      "description": "Average preparation time in minutes"
+    },
+    "onTimeDeliveryRate": {
+      "type": "number",
+      "description": "Percentage of on-time deliveries"
+    },
+    "cancellationRate": {
+      "type": "number",
+      "description": "Order cancellation rate percentage"
+    },
+    "repeatCustomerRate": {
+      "type": "number",
+      "description": "Percentage of repeat customers"
+    },
+    "newCustomersAcquired": {
+      "type": "number",
+      "description": "Number of new customers gained"
+    },
+    "commissionPaid": {
+      "type": "number",
+      "description": "Total commission paid to Pronto in dollars"
+    },
+    "netPayoutToMerchant": {
+      "type": "number",
+      "description": "Net payout amount to merchant after commission"
+    },
+    "topSellingItem": {
+      "type": "string",
+      "description": "Name of the best-selling menu item"
+    },
+    "topSellingItemOrders": {
+      "type": "number",
+      "description": "Number of orders for the top selling item"
+    },
+    "peakHour": {
+      "type": "string",
+      "description": "Busiest hour of the day for orders"
+    },
+    "upgradeEligible": {
+      "type": "boolean",
+      "description": "Whether the merchant is eligible for a tier upgrade"
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of account manager recommendations"
+    }
+  }
+}
